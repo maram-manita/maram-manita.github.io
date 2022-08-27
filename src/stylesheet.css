@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --bg: #242526;
+  --bg-accent: #484a4d;
+  --text-color: #dadce1;
+  --nav-size: 60px;
+  --border: 1px solid #474a4d;
+  --border-radius: 8px;
+  --speed: 500ms;
+}
+.app {
+  width: 100%;
+}
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  width: 300px;
+  transition: ease-in-out 0.3s;
+  align-content: center;
+  justify-content: flex-start;
+}
+.card > * {
+  text-align: center;
+}
+.card:hover {
+  transform: translateY(-5%);
+}
+.grid-display {
+  display: flex;
+  margin: 2em 3em;
+  gap: 20px 30px;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.year {
+  font-style: italic;
+}
+.director {
+  color: #949494;
+}
+input {
+  width: 80%;
+  background-color: #f9f9f9;
+  border: none;
+  outline: none;
+  padding: 0.5em;
+  font-family: "Poppins", sans-serif;
+  margin: 0.25em 0;
+  border-radius: 0.25em;
+}
+.card button {
+  background-color: #141217;
+  color: white;
+  padding: 1em;
+  border: none;
+  outline: none;
+  display: block;
+  width: 80%;
+  border-radius: 0.5em;
+  margin-top: 0.25em;
+  font-size: 1em;
+  font-weight: bolder;
+}
+.card button:hover {
+  cursor: pointer;
+}
+.no-hover:hover {
+  transform: translateY(0%);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slide-in-enter {
+  transform: translateY(-10%);
+  opacity: 0;
+}
+.slide-in-enter-active {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.navbar {
+  background-color: #141217;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1em 0;
+}
+.search-form {
+  margin-left: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  align-self: flex-end;
+}
+.icon-button {
+  border-radius: 0 0.25em 0.25em 0;
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: #f9f9f9;
+  color: #141217;
+  padding: 0.75em;
+  transition: ease-in-out 0.2s;
+}
+.icon-button:hover {
+  cursor: pointer;
+  background-color: #dadce1;
+}
+.search-bar {
+  border-radius: 0.25em 0 0 0.25em;
+  width: 300px;
+  padding-left: 1em;
+}
+.bundle-img {
+  width: 75px;
+  border-radius: 0.25em;
+  text-align: center;
+}
+.bundle-desc {
+  margin: 1em 0;
+}
+
+.item-img {
+  width: 120px;
+  height: 120px;
+}
+.item-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0.5em 0;
+  background-color: #f9f9f9;
+  padding: 1em 0.25em;
+  border-radius: 0.25em;
+}
+.item-name {
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+.item-rarity {
+  color: white;
+  border-radius: 20px;
+  align-self: center;
+  font-size: 0.9em;
+  margin-bottom: 0.75em;
+}
+.epic {
+  background-image: linear-gradient(45deg, #a32cdf 0%, #4a3cdb 100%);
+  width: 60px;
+}
+.rare {
+  background-image: linear-gradient(45deg, #0d4dff 0%, #00c0ff 100%);
+  width: 60px;
+}
+.uncommon {
+  width: 100px;
+  background-image: linear-gradient(45deg, #9be15d 0%, #00e3ae 100%);
+}
+.legendary {
+  width: 100px;
+  background-image: linear-gradient(45deg, #f9d423 0%, #fda085 100%);
+}
+.item-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.bundle-name {
+  margin-bottom: 1em;
+}
+.bundle-price {
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+.coin {
+  background-image: linear-gradient(45deg, #f9d423 0%, #fee140 100%);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 0.5em;
+  margin: 0 0.25em;
+}
+.home-header {
+  margin: 1em 0;
+  text-align: center;
+  font-size: 60px;
+}
