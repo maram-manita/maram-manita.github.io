@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"; //don't forget to import usecontext
+import React, { useState, useEffect } from "react";
 
 function Card(props) {
   const [items, setItems] = useState([]);
@@ -32,19 +32,21 @@ function Card(props) {
         <span className="bundle-price">{props.finalPrice}</span>
         <span className="coin">C</span>
       </div>
-      {props.items.map((item) => (
-        <div className="item-row" key={item.id}>
-          <img className="item-img" src={item.images.icon} />
-          <div className="item-desc">
-            <span className="item-name">{item.name}</span>
-            <span className={"item-rarity" + rarityStyle(item.rarity.value)}>
-              {item.rarity.value}
-            </span>
-            <span>{item.description}</span>
-            <hr></hr>
+      <div className="items-list">
+        {props.items.map((item) => (
+          <div className="item-row" key={item.id}>
+            <img className="item-img" src={item.images.icon} />
+            <div className="item-desc">
+              <span className="item-name">{item.name}</span>
+              <span className={"item-rarity" + rarityStyle(item.rarity.value)}>
+                {item.rarity.value}
+              </span>
+              <span>{item.description}</span>
+              <hr></hr>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
